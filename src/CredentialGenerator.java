@@ -10,7 +10,7 @@ public class CredentialGenerator {
         // 2. Validate
         System.out.println("Is valid: " + PasswordUtils.isValidPassword(password));
 
-        // 3. Hash + salt
+        /// 3. Hash + salt
         String salt = HashUtils.generateSalt(16);
         String hash = HashUtils.hashPassword(password, salt);
         System.out.println("Salt: " + salt);
